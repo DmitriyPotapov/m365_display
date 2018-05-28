@@ -60,8 +60,8 @@ struct __attribute__((packed))A25C31{
   unsigned char u4;                //battery status??? (unknown)
   int           current;           //current        /100 = A
   int           voltage;           //batt voltage   /100 = V
-  unsigned char u9;    //2B
-  unsigned char u10;   //2C
+  unsigned char u9;    //possible battery temperature 1 (u9 - 20 = temp in celsius)
+  unsigned char u10;   //possible battery temperature 2 (u10 - 20 ...)
   //int i4;
 }S25C31;
 
